@@ -1,0 +1,1 @@
+console.log("%cУспех!", "color: green; font-weight: bold; font-size: 14px");
