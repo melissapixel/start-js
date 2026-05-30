@@ -1,0 +1,7 @@
+{
+    "posts": [
+        { "id": 1, "title": "How to sleep?", "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo ipsa aliquid, quas officia at blanditiis voluptatibus odio molestiae harum quae ipsam odit laudantium autem laborum quam ea perspiciatis mollitia."},
+
+        { "id": 2, "title": "About cat", "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo ipsa aliquid, quas officia at blanditiis voluptatibus odio molestiae harum quae ipsam odit laudantium autem laborum quam ea perspiciatis mollitia." }
+    ]
+}
