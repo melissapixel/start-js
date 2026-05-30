@@ -9,9 +9,9 @@ const meatPrice = 190;
 const juicePrice = 63;
 
 let peopleCount = 3;
-let basePrice = winePrice * 2 + icecreamePrice * 3 + saladPrice * 2 + meatPrice * 5 + juicePrice * 2;
+let basePrice = winePrice * 2 + icecreamPrice * 3 + saladPrice * 2 + meatPrice * 5 + juicePrice * 2;
 let perPeople = basePrice / peopleCount;
 let comment = perPeople >= 1000 ? 'It is sad' : 'It is happy';
 
-console.log('Total cost of the check -', basePrice, 'p');
-console.log('Payment for one person -', perPeople, 'p.', comment);
+console.log(`Total cost of the check - ${basePrice}p.`);
+console.log(`Payment for one person - ${perPeople}p. ${comment}.`);
