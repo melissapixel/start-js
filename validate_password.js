@@ -6,15 +6,16 @@
 // 3. Если длина 10 и больше -> message = "Отличный, надежный пароль!"
 
 
-let password = "d2kd2kd2kd2k";
+let password = "";
+let passwordLen = password.length;
 let message = "";       // Later message for user
 
-if (password.length < 6) {
+if (passwordLen < 6) {
     message = "Password is short.";
-} else if (password.length >= 6 && password.length <= 9) {
+} else if (passwordLen >= 6 && passwordLen <= 9) {
     message = "Password is middle.";
-} else if (password.length >= 10) {
+} else if (passwordLen >= 10) {
     message = "Good password.";
 }
 
-console.log(`${message} Length of password: ${password.length}`);
+console.log(`${message} Length of password: ${passwordLen}`);
