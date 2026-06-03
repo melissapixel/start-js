@@ -1,13 +1,11 @@
 // case: Ты делаешь фичу для интернет-магазина. Маркетинг сказал: "Если корзина больше 5000 рублей, доставка бесплатная. ИЛИ если у пользователя есть промокод 'GIFT', доставка тоже бесплатная. Иначе доставка стоит 500 рублей".
 
 let cartTotal = 4000;
+let hasVip = 0;
 let hasPromocode = 1;
 let shippingCost = 500;
 
-if (cartTotal > 5000) {
-    shippingCost = 0;
-    console.log("Доставка бесплатна!");
-} else if (hasPromocode == true) {
+if (cartTotal > 5000 || hasPromocode === 1 || hasVip === 1) {
     shippingCost = 0;
     console.log("Доставка бесплатна!");
 }
