@@ -2,17 +2,16 @@
 
 let cartTotal = 4000;
 let hasPromocode = 1;
-let deliveryCost = 0;
-const shippingCost = 500;
+let shippingCost = 500;
 
 if (cartTotal > 5000) {
-    deliveryCost = 1;
+    shippingCost = 0;
     console.log("Доставка бесплатна!");
 } else if (hasPromocode == true) {
-    deliveryCost = 1;
+    shippingCost = 0;
     console.log("Доставка бесплатна!");
 }
 else {
-    deliveryCost = 0;
+    shippingCost = 500;
     console.log(`Стоимость доставки: ${shippingCost}`);
 }
