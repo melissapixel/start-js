@@ -6,9 +6,9 @@
 // 3. Если длина 10 и больше -> message = "Отличный, надежный пароль!"
 
 
-let password = "";
-let passwordLen = password.length;
-let message = "";       // Later message for user
+let password = null;
+let passwordLen = (password || "").length;
+let message = "";                                   // Later message for user
 
 if (password === "" || password == null) {          // first - check на пустоту
     message = "Password is empty!";
