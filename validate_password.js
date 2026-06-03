@@ -10,12 +10,14 @@ let password = "";
 let passwordLen = password.length;
 let message = "";       // Later message for user
 
-if (passwordLen < 6) {
-    message = "Password is short.";
-} else if (passwordLen >= 6 && passwordLen <= 9) {
+if (password === "" || password == null) {          // first - check на пустоту
+    message = "Password is empty!";
+} else if (passwordLen < 6) {
+    message = "Password is short.";   
+} else if (passwordLen <= 9) {
     message = "Password is middle.";
-} else if (passwordLen >= 10) {
+} else {
     message = "Good password.";
-}
+} 
 
 console.log(`${message} Length of password: ${passwordLen}`);
