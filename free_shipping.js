@@ -2,10 +2,10 @@
 
 let cartTotal = 4000;
 let hasVip = 0;
-let hasPromocode = 1;
+let hasPromocode = 'GIFT';
 let shippingCost = 500;
 
-if (cartTotal > 5000 || hasPromocode === 1 || hasVip === 1) {
+if (cartTotal > 5000 || hasPromocode === 'GIFT' || hasVip === 1) {
     shippingCost = 0;
     console.log("Доставка бесплатна!");
 }
