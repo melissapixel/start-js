@@ -3,7 +3,7 @@
 
 // input date
 let isLog = true;
-let userRole = "manager";
+let userRole = "admin";
 let message = "";
 
 // Правила доступа:
@@ -14,9 +14,9 @@ let message = "";
 
 if (!isLog) {
     message = "Log in system, Please.";
-} else if (isLog && userRole === "admin") {
+} else if (userRole === "admin") {
     message = "Hello, boss!";
-} else if (isLog && userRole === "manager") {
+} else if (userRole === "manager") {
     message = "Access, but only read.";
 } else {
     message = "Not access";
