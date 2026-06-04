@@ -13,8 +13,17 @@ let cap = contribution / 100;
 
 let result = many * (1 + cap/12) ** (12*yearCount);
 
+let buy = 13500;
+if (result >= buy){
+    let buyIs = true;
+    let balanse = result - buy;
+    let message = `U may bue it. Later balanse is ${balanse}`;
+} else {
+    let buyIs = false;
+    let message = `U dont may bue it!`;
+}
 
-console.log(result);
+console.log(message);
 
 // let capitalizationInMouth = contribution / 12;
 // let mounthCount = 12 * yearCount; 
