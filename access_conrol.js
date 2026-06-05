@@ -12,8 +12,6 @@ let message;
 
 switch (userRole) {
     case "admin":
-        message = "Welcome, Chief! Full system control is available.";
-        break;
     case "editor":
         message = "Hello! You can create and edit articles.";
         break;
