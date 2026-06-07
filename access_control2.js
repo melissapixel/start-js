@@ -4,5 +4,5 @@ let isLoggedIn = true;        // Пользователь вошел в сист
 let isAdmin = false;          // Является ли он админом
 let isBanned = false;         // Забанен ли он
 
-let canSeeAdminPanel = (isLoggedIn && isAdmin && !isBanned) ? true : false;
+let canSeeAdminPanel = isLoggedIn && isAdmin && !isBanned;
 console.log(canSeeAdminPanel);
