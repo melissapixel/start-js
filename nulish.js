@@ -4,5 +4,7 @@ const maxVolume = 100;
 const defaultVolume = 50;
 const minVolume = 0;
 
-let userVolume = 0;
-let playVolume = userVolume ?? defaultVolume;
+let userVolume = null;
+let playVolume = Number(userVolume ?? defaultVolume);
+
+console.log(playVolume);
