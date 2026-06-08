@@ -4,7 +4,9 @@ const maxVolume = 100;
 const defaultVolume = 50;
 const minVolume = 0;
 
-let userVolume = null;
+let userVolume = 122;
 let playVolume = Number(userVolume ?? defaultVolume);
+let isVolumeValid = maxVolume >= playVolume && playVolume >= minVolume;
 
 console.log(playVolume);
+console.log(isVolumeValid);
