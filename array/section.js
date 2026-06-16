@@ -10,3 +10,10 @@ const allComments = [
 
 console.log(allComments.slice(0, 3));       // save original array
 console.log(allComments);
+
+
+// case: Пользователь нажал на иконку "корзины" напротив товара, и нам нужно удалить этот товар из массива состояния корзины. В старом коде или при прямой работе с массивом мы делаем это "на месте".
+let cart = ["Смартфон", "Чехол", "Защитное стекло", "Наушники"];
+const itemToRemoveIndex = 1; 
+console.log(cart.splice(itemToRemoveIndex, 1));
+console.log(cart);
