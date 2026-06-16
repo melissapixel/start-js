@@ -15,5 +15,40 @@ console.log(allComments);
 // case: Пользователь нажал на иконку "корзины" напротив товара, и нам нужно удалить этот товар из массива состояния корзины. В старом коде или при прямой работе с массивом мы делаем это "на месте".
 let cart = ["Смартфон", "Чехол", "Защитное стекло", "Наушники"];
 const itemToRemoveIndex = 1; 
-console.log(cart.splice(itemToRemoveIndex, 1));
-console.log(cart);
+// console.log(cart.splice(itemToRemoveIndex, 1));
+// console.log(cart);
+
+
+// case: Дан массив [10, 20, 30, 40, 50]. С помощью slice получи массив [20, 30].
+let array = [10, 20, 30, 40, 50];
+let array1 = array.slice(1, 3);
+console.log(array1);
+
+// case: Дан массив ["яблоко", "банан", "апельсин"]. Удали "банан" так, чтобы в исходном массиве его не стало.
+let fruects = ["яблоко", "банан", "апельсин"];
+fruects.splice(1, 1);
+console.log(fruects);
+
+// case: Дан массив [1, 2, 5]. Вставь числа 3 и 4 между двойкой и пятеркой, чтобы массив стал [1, 2, 3, 4, 5].
+let num = [1, 2, 5];
+num.splice(2, 0, 3, 4);
+console.log(num);
+
+// case: Нам неважно, сколько всего элементов в массиве, нам нужны только последние два (например, последние два сообщения в чате)
+const messages = ["Привет", "Как дела?", "Норм", "А у тебя?", "Тоже супер", "Отлично!"];
+const lastTwo = messages.slice(-2);
+console.log(lastTwo);
+
+// case: В списке ролей пользователя есть ошибка. Нужно не просто удалить "гость", а заменить его на "пользователь" на том же месте.
+const roles = ["админ", "гость", "модератор"];
+roles.splice(1, 1, "user");
+console.log(roles);
+
+// case: В реальной разработке мы часто знаем значение, которое нужно удалить (например, ID товара или имя), но не знаем его индекс в массиве. // need to delete banana
+const fruits = ["яблоко", "груша", "банан", "киви"];
+function deleteElInArrayForIndex (array, whatDelete) {
+  let index = array.indexOf(whatDelete);
+  array.splice(index, 1);
+  return array;
+}
+console.log(deleteElInArrayForIndex(fruits, "банан"));
