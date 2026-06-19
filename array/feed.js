@@ -15,12 +15,7 @@ const wsMessages = [
 ];
 
 function getFeed (arrayApi, arrayWebsocket) {
-    // work with reverse
-    const copyArrayApi = arrayApi.slice();
-    copyArrayApi.reverse();
-
-    // склейка
-    return copyArrayApi.concat(arrayWebsocket);
+    return [...arrayApi].reverse().concat(arrayWebsocket);
 }
 
 console.log(getFeed(historyMessages, wsMessages));
