@@ -12,3 +12,9 @@ for (let i = 10; i >=1; i--) {
 for (let i = 0; i < 5; i++) {
     console.log('Hi!');
 }
+
+// case: Выведи таблицу умножения на число 7:
+for (let i = 1; i <=10; i++) {
+    let result = 7*i;
+    console.log(`7 * ${i} = ${result}`);
+}
